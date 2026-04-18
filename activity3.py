@@ -1,14 +1,12 @@
-a = 5
-print("type of a:", type(a))
-b = 3.14
-print("type of b:", type(b))
-c = "Hello, World!"
-print("type of c:", type(c))
-d = True
-print("type of d:", type(d))
+print("Enter Marks obtained in 5 subjects")
+math = int(input("Math: "))
+science = int(input("Science: "))
+english = int(input("English: "))
+history = int(input("History: "))
+geography = int(input("Geography: "))
 
-b=int(b)
-print("After converting b to int, type of b:", type(b))
-
-a=str(a)
-print("After converting a to str, type of a:", type(a))
+sum = math+science+english+history+geography
+print("Total Marks obtained is", sum)
+perc = (sum/500)*100
+print(end="Percentage Mark =  ")
+print(perc, "%")
