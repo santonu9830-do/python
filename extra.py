@@ -1,22 +1,12 @@
-# Simple Interest Project
-def calculate_si():
-    try:
-        # Taking user input
-        p = float(input("Enter the principal amount: "))
-        r = float(input("Enter the annual interest rate (%): "))
-        t = float(input("Enter the time period (in years): "))
+def convert_temp(temp, unit):
+    if unit.upper() == 'C':
+        return temp * 1.8 + 32  # Celsius to Fahrenheit
+    elif unit.upper() == 'F':
+        return (temp - 32) / 1.8 # Fahrenheit to Celsius
+    else:
+        return "Invalid Unit"
 
-        # Applying the formula
-        si = (p * r * t) / 100
-        total_amount = p + si
-
-        
-        # Displaying the result
-        print(f"\nSimple Interest: {si:.2f}")
-        print(f"Total Amount (Principal + Interest): {total_amount:.2f}")
-    except ValueError:
-        print("Please enter valid numeric values.")
-
-# Run the project
-calculate_si()
-
+# Usage
+temp = float(input("Enter temperature: "))
+unit = input("Enter unit (C or F): ")
+print(f"Result: {convert_temp(temp, unit)}")
