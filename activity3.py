@@ -1,12 +1,6 @@
-print("Enter Marks obtained in 5 subjects")
-math = int(input("Math: "))
-science = int(input("Science: "))
-english = int(input("English: "))
-history = int(input("History: "))
-geography = int(input("Geography: "))
+i = 5
 
-sum = math+science+english+history+geography
-print("Total Marks obtained is", sum)
-perc = (sum/500)*100
-print(end="Percentage Mark =  ")
-print(perc, "%")
+if (i < 15):
+    print("i is smaller than 15")
+else:
+    print("i is greater than 15")
