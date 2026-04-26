@@ -1,23 +1,27 @@
-a = 10
-b = 12
-c = 12
 
-print(not (a == b))
-print(not (b == c))
+print("Electricity Bill Calculator")
+units = float(input("Enter the number of units consumed: "))
 
-a = "apple"
-b = "banana"
+if units < 50:
+    cost_per_unit = 2.60
+    tax = 25
+elif units < 100:
+    cost_per_unit = 3.25
+    tax = 35
+elif units < 200:
+    cost_per_unit = 5.26
+    tax = 45
+else:
+    cost_per_unit = 8.45
+    tax = 75
+bill_amount = units * cost_per_unit
+total_amount = bill_amount + tax
 
-if a != b:
-    print("a and b are different.")
 
-a = 1
-b = 3
 
-if (a == 1) != (b == 5):
-    print("Hello")
+print("Units consumed: ",units)
+print("Cost per unit: ",cost_per_unit)
+print("Bill amount: ",bill_amount)
+print("Tax: ",tax)
+print("Total amount to be paid: ",total_amount)
 
-a = int(input("Enter an integer: "))
-
-if not (a % 2 == 0):
-    print(a, "is not an even number. It is odd.")
