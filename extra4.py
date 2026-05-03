@@ -1,9 +1,8 @@
-a = input("Enter anything: ")
-if a.isalpha():
-    print("Alphabet")
-elif a.isdigit():
-    print("Digit")
-else:
-    print("Character")
-
-    
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum = sum + digit
+    temp = temp // 10
+print("Sum of digits is", sum)
