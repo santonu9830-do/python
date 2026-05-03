@@ -1,12 +1,9 @@
-medical_cause = input("Do you have a medical cause? (Y/N): ")
+n = int(input("Enter the value of terms: "))
 
-if medical_cause.upper() == 'Y':
-    if input("Do you have a medical certificate? (Y/N): ").upper() == 'Y':
-        print("You are allowed to give the exam.")
-else:
-    attendance = float(input("Enter your attendance percentage: "))
-    
-    if attendance > 75:
-        print("You are allowed to give the exam.")
-    else:
-        print("You are NOT allowed to give the exam.")
+sum = 0
+i = 1
+while i <= n:
+    sum = sum + i
+    i = i + 1
+
+print("\nSum = ", sum)
