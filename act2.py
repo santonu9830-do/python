@@ -1,10 +1,8 @@
-lower = int(input("Please enter the lower limit : "))
-upper = int(input("Please enter the upper limit : "))
-print("The prime numbers between", lower, "and", upper, "are : ")
-for num in range(lower, upper + 1):
-    if num > 1:
-        for i in range (2, num):
-            if (num % i) == 0:
-                break
-        else:
-            print(num)
+rows = int(input("Enter the total number of rows: "))
+number = 1
+print ("Floyd's Triangle:")
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(number, end=' ')
+        number += 1
+    print()
