@@ -1,8 +1,4 @@
-# Python program to calculate the n-th power of a number
-
-num = int(input("Enter the number: "))
-n = int(input("Enter the power: "))
-
-result = num ** n
-
-print("Result =", result)
+rows = 5
+for i in range(1, rows + 1):
+    
+    print(" " * (rows - i) + "*" * i)
