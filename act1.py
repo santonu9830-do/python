@@ -1,9 +1,13 @@
-string = input("Please enter your word : ")
-char = input("Please enter the character you want to count : ")
-i = 0
-count = 0
-while i < len(string):
-    if string[i] == char:
-        count += 1
-    i += 1
-print("The number of times the character appears in the word is : ", count)
+import turtle
+turtle.Screen().bgcolor("orange")
+turtle.Screen().setup(300, 400)
+polygon = turtle.Turtle()
+num_sides = 6
+side_length = 70
+angle = 360 / num_sides
+polygon.color("blue")
+for i in range(num_sides):
+    polygon.forward(side_length)
+    polygon.right(angle)
+
+turtle.done()    
