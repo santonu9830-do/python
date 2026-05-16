@@ -1,8 +1,21 @@
-rows = int(input("Enter the total number of rows: "))
-number = 1
-print ("Floyd's Triangle:")
-for i in range(1, rows + 1):
-    for j in range(1, i + 1):
-        print(number, end=' ')
-        number += 1
-    print()
+import turtle
+turtle.Screen().bgcolor("aqua")
+board = turtle.Turtle()
+
+board.forward(100)
+board.left(120)
+board.forward(100)
+board.left(120)
+board.forward(100)
+board.penup()
+board.right(150)
+board.forward(50)
+
+board.pendown()
+board.right(90)
+board.forward(100)
+board.right(120)
+board.forward(100)
+board.right(120)
+board.forward(100)
+turtle.done()
