@@ -1,13 +1,4 @@
-import turtle
-turtle.Screen().bgcolor("orange")
-turtle.Screen().setup(300, 400)
-polygon = turtle.Turtle()
-num_sides = 6
-side_length = 70
-angle = 360 / num_sides
-polygon.color("blue")
-for i in range(num_sides):
-    polygon.forward(side_length)
-    polygon.right(angle)
+def well_wishes():
+    print("Wishing you a wonderful day filled with joy and success!")
 
-turtle.done()    
+    well_wishes()
