@@ -1,4 +1,5 @@
-def well_wishes():
-    print("Wishing you a wonderful day filled with joy and success!")
-
-    well_wishes()
+def total_calc(bill_amount,tip_perc):
+    total = bill_amount*(1+0.01*tip_perc)
+    total = round(total,2)
+    print(f"please pay: {total}")
+total_calc(100,15)
