@@ -1,5 +1,8 @@
-def weather_condition():
-    print('The weather today is pleasant with a gentle breeze', 'spring')
-    print('the weather is same in ', 'autumn')
-    spring = autumn = 'pleasant with a gentle breeze'
-    weather_condition()
+def cube(num):
+    return num**3
+def check(num):
+    if num%3==0:
+        print('The cube is:',cube(num))
+    else:
+        print('the number is not divisible by 3')
+check(99)
