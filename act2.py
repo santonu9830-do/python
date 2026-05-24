@@ -1,8 +1,16 @@
-def cube(num):
-    return num**3
-def check(num):
-    if num%3==0:
-        print('The cube is:',cube(num))
-    else:
-        print('the number is not divisible by 3')
-check(99)
+for x in range(10):
+    
+   if x % 20 == 0:
+     print("twist")
+
+   elif x % 15 == 0:
+    pass
+
+   elif x % 3 == 0:
+    print("buzz")
+
+   elif x % 5 == 0:
+    print("rizz")
+
+   else:
+    print(x)
