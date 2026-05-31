@@ -1,13 +1,20 @@
-a = input("Enter a word: ")
-b = input("Enter a letter: ")
+import random
+playing = True
+number = str(random.randint(1, 10))
 
-for i in a:
-    if i == b:
+print("Welcome to the Number Guessing Game!")
 
-        print("The letter b found in the word")
+print("I have selected a number between 1 and 10. Can you guess it?")
+
+while playing:
+
+    guess = input("Enter your guess: ")
+
+    if guess == number:
+        print("Congratulations! You guessed the number!")
+        playing = False
+
         break
-    
-    else:
-        print("The letter b not found in the word")
 
-    
+    else:
+        print("Wrong guess. Try again!")
